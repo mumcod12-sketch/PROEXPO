@@ -25,28 +25,33 @@
             z-index: 1001;
             background: #333;
             color: #eee;
-            padding: 8px 0;
+            padding: 7px 0;
             border-bottom: 2px solid #D4AF37;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
         }
         .social-top-bar .social-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 10px;
+            width: 100%;
         }
         .social-top-bar .social-text {
             font-weight: 600;
             color: #fff;
             white-space: nowrap;
+            font-size: 0.8rem;
         }
         .social-top-bar .social-text i {
             color: #D4AF37;
-            margin-left: 6px;
+            margin-left: 5px;
             animation: bellRing 2s infinite;
         }
         @keyframes bellRing {
@@ -59,20 +64,20 @@
         }
         .social-top-bar .social-icons {
             display: flex;
-            gap: 12px;
+            gap: 8px;
             align-items: center;
         }
         .social-top-bar .social-icons a {
             color: #ccc;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 32px;
-            height: 32px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.1);
         }
         .social-top-bar .social-icons a:hover {
             color: #fff;
@@ -82,15 +87,15 @@
         
         /* تعويض المسافة للـ navbar */
         .navbar {
-            top: 48px !important;
+            top: 42px !important;
         }
         
         /* تعويض المسافة للهيرو */
         .hero {
-            padding-top: 130px !important;
+            padding-top: 122px !important;
         }
         
-        /* الأيقونات العائمة - تعديل المواقع */
+        /* الأيقونات العائمة */
         .whatsapp-float {
             bottom: 20px !important;
         }
@@ -100,38 +105,62 @@
         
         @media (max-width: 768px) {
             .social-top-bar {
-                font-size: 0.75rem;
-                padding: 6px 0;
-            }
-            .social-top-bar .social-container {
-                gap: 8px;
-            }
-            .social-top-bar .social-text {
+                padding: 5px 0;
+                min-height: 36px;
                 font-size: 0.7rem;
             }
+            .social-top-bar .social-container {
+                gap: 6px;
+                padding: 0 10px;
+            }
+            .social-top-bar .social-text {
+                font-size: 0.68rem;
+            }
             .social-top-bar .social-icons a {
-                width: 28px;
-                height: 28px;
-                font-size: 0.9rem;
+                width: 26px;
+                height: 26px;
+                font-size: 0.8rem;
             }
             .navbar {
-                top: 42px !important;
+                top: 38px !important;
             }
             .hero {
-                padding-top: 120px !important;
+                padding-top: 118px !important;
             }
         }
         
         @media (max-width: 480px) {
+            .social-top-bar {
+                min-height: 32px;
+                padding: 4px 0;
+            }
             .social-top-bar .social-container {
-                flex-direction: column;
-                gap: 4px;
+                gap: 5px;
+                padding: 0 8px;
+            }
+            .social-top-bar .social-text {
+                font-size: 0.6rem;
+                white-space: normal;
+                text-align: center;
+                line-height: 1.3;
+                max-width: 100%;
+            }
+            .social-top-bar .social-text br {
+                display: none;
+            }
+            .social-top-bar .social-icons {
+                gap: 5px;
+            }
+            .social-top-bar .social-icons a {
+                width: 24px;
+                height: 24px;
+                font-size: 0.75rem;
             }
             .navbar {
-                top: 62px !important;
+                top: 50px !important;
             }
             .hero {
-                padding-top: 140px !important;
+                padding-top: 130px !important;
             }
         }
         
@@ -380,11 +409,11 @@
 </head>
 <body>
     
-    <!-- ========== شريط التواصل الاجتماعي العلوي الثابت ========== -->
+    <!-- ========== شريط التواصل الاجتماعي العلوي الثابت (محسّن للجوال) ========== -->
     <div class="social-top-bar" aria-label="تابعونا على صفحاتنا الرسمية">
         <div class="social-container">
             <span class="social-text">
-                <i class="fas fa-bell"></i> تابعونا على صفحاتنا الرسمية للاطلاع على أحدث المعارض والدراسات والعروض الاستثمارية
+                <i class="fas fa-bell"></i> تابعونا على صفحاتنا الرسمية
             </span>
             <div class="social-icons">
                 <a href="https://facebook.com/proexpo" target="_blank" title="فيسبوك" aria-label="صفحتنا على فيسبوك">
